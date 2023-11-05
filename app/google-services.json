@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "514265375072",
+    "project_id": "recipe-search-app-akash",
+    "storage_bucket": "recipe-search-app-akash.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514265375072:android:95b0eba059a916f6febe05",
+        "android_client_info": {
+          "package_name": "com.akashdas.recipesearchapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs6WsuKQ0SHfB1m_mB-60DFiNAeJWKffU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

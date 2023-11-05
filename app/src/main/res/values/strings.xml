@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Culinary Quest</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    // use in registration/login
+    <string name="register">Register</string>
+    <string name="regis_text">Enter your details</string>
+    <string name="reg_check_text"><![CDATA[I accept the <Culinary Quest> Terms of Services and Privacy policy]]></string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="demo_email">shadman4work@gmail.com</string>
+    <string name="login">Login</string>
+    <string name="search_hint">Enter text to search</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="forty_dp">40dp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+    <dimen name="thirty_dp">30dp</dimen>
+</resources>

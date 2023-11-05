@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragment.HomeFragment"
+        android:background="@color/app_background">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/thirty_dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/thirty_dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/app_name"
+            android:textColor="@color/black_text"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/starButton"
+            style="?attr/materialIconButtonFilledTonalStyle"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:backgroundTint="@color/button_color"
+            app:iconSize="18dp"
+            app:icon="@drawable/baseline_star_24"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/profileButton"
+            style="?attr/materialIconButtonFilledTonalStyle"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:backgroundTint="@color/button_color"
+            app:icon="@drawable/round_person_24"
+            app:iconSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintEnd_toStartOf="@+id/starButton"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@drawable/search_background_field"
+            android:ems="10"
+            android:hint="@string/search_hint"
+            android:inputType="text"
+            app:layout_constraintEnd_toStartOf="@+id/searchButton"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/searchButton"
+            style="?attr/materialIconButtonFilledTonalStyle"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="-5dp"
+            app:backgroundTint="@color/button_color"
+            app:icon="@drawable/baseline_search_24"
+            app:iconSize="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextText"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/editTextText" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleLine="true"
+            android:layout_marginVertical="@dimen/ten_dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/searchButton" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/background_field_main"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chipGroup" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
