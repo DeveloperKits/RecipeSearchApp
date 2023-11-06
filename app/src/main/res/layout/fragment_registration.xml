@@ -156,5 +156,17 @@
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
+    <Button
+        android:id="@+id/login"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Have an account? Login"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

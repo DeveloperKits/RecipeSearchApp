@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/forty_dp"
         android:fontFamily="@font/poppins"
-        android:text="@string/register"
+        android:text="@string/login"
         android:textColor="@color/black_text"
         android:textSize="35sp"
         app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -129,5 +129,16 @@
         app:layout_constraintEnd_toStartOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/number" />
+
+    <Button
+        android:id="@+id/register"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Create an account? Register"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
