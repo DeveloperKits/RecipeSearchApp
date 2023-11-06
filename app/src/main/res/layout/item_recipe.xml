@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="@dimen/twenty_dp"
+        android:layout_marginBottom="@dimen/twenty_dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_url"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_url"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black_text"
+                android:text="@string/demo_title" />
+
+            <TextView
+                android:id="@+id/publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_text"
+                android:layout_marginHorizontal="15dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black_text"
+                android:text="@string/demo_publisher" />
+
+            <TextView
+                android:id="@+id/social_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/publisher"
+                android:layout_marginHorizontal="15dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/button_color"
+                android:text="@string/demo_social_rank" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/social_rank"
+                app:dividerInsetStart="15dp"
+                app:dividerInsetEnd="15dp" />
+
+            <TextView
+                android:id="@+id/ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black_text"
+                android:text="@string/ingredients" />
+
+            <TextView
+                android:id="@+id/ingredients_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ingredients"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black_text"
+                android:text="@string/ingredients" />
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/save_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/sl_favourite_24dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            app:buttonTint="@android:color/white" />
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

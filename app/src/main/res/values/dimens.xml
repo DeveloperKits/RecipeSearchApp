@@ -4,4 +4,6 @@
     <dimen name="forty_dp">40dp</dimen>
     <dimen name="twenty_dp">20dp</dimen>
     <dimen name="thirty_dp">30dp</dimen>
+    <dimen name="chip_stroke_width">3dp</dimen>
+
 </resources>

@@ -12,4 +12,9 @@
     <string name="demo_email">shadman4work@gmail.com</string>
     <string name="login">Login</string>
     <string name="search_hint">Enter text to search</string>
+    <string name="total_list_recipe">Total list of recipe:</string>
+    <string name="demo_title">Best Pizza Dough Ever</string>
+    <string name="demo_publisher">Publisher: 101 Cookbooks</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="demo_social_rank">Social Rank: 100</string>
 </resources>
