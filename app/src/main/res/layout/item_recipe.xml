@@ -2,13 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="4dp"
+        android:layout_marginHorizontal="@dimen/thirty_dp"
         app:cardCornerRadius="@dimen/twenty_dp"
-        android:layout_marginBottom="@dimen/twenty_dp">
+        android:layout_marginTop="@dimen/twenty_dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -18,8 +18,7 @@
                 android:id="@+id/image_url"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/logo" />
+                android:scaleType="centerCrop" />
 
             <TextView
                 android:id="@+id/title_text"
@@ -54,6 +53,19 @@
                 android:fontFamily="@font/poppins"
                 android:textColor="@color/button_color"
                 android:text="@string/demo_social_rank" />
+
+            <TextView
+                android:id="@+id/recipe_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/publisher"
+                android:layout_marginHorizontal="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="#47746"
+                android:textColor="@color/black_text"
+                android:textSize="16sp" />
 
             <com.google.android.material.divider.MaterialDivider
                 android:id="@+id/divider"

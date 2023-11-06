@@ -7,12 +7,7 @@
                 android:topLeftRadius="30dp"/>
             <!-- Specify the background color -->
             <solid android:color="#FFFFFF" />
-            <!-- Add padding inside the EditText -->
-            <padding
-                android:left="30dp"
-                android:top="12dp"
-                android:right="30dp"
-                android:bottom="12dp" />
+
 
         </shape>
     </item>

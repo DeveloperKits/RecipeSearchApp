@@ -109,17 +109,24 @@
             android:layout_height="0dp"
             android:orientation="vertical"
             android:background="@drawable/background_field_main"
-            android:paddingTop="@dimen/twenty_dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chipScroll">
+
+            <ImageView
+                android:id="@+id/gif"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/totalRecipe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginHorizontal="@dimen/thirty_dp"
                 android:fontFamily="@font/poppins"
                 android:textColor="@color/black_text"
                 android:text="@string/total_list_recipe" />
@@ -128,10 +135,7 @@
                 android:id="@+id/recycle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scrollbars="none"
-                android:overScrollMode="never"
-                tools:listitem="@layout/item_recipe"
-                android:paddingTop="@dimen/ten_dp"/>
+                android:overScrollMode="never"/>
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

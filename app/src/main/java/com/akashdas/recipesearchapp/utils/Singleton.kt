@@ -1,4 +1,4 @@
-package com.akashdas.recipesearchapp.Helper
+package com.akashdas.recipesearchapp.utils
 
 object Singleton {
     val chipTexts = arrayOf(
@@ -19,4 +19,7 @@ object Singleton {
         "beef", "goat", "lamb", "turkey", "pork", "fish", "crab", "bacon", "ham", "pepperoni",
         "salami", "ribs"
     )
+
+    const val publish = "Publisher:\t"
+    const val socialRank = "Social Rank:\t"
 }
