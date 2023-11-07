@@ -29,7 +29,8 @@ class MainActivity : AppCompatActivity() {
 
                 } else {
                     // Otherwise, navigate up in the navigation stack
-                    onBackPressedDispatcher.onBackPressed()
+                    //isEnabled = false
+                    //onBackPressedDispatcher.onBackPressed()
                 }
             }
         }

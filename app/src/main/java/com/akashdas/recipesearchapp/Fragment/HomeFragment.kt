@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.akashdas.recipesearchapp.Adapter.RecipeAdapter
 import com.akashdas.recipesearchapp.utils.Singleton
@@ -41,6 +42,10 @@ class HomeFragment : Fragment() {
         // all about chip
         chip()
         searchData("carrot")
+
+        binding.profileButton.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
+        }
 
         binding.searchButton.setOnClickListener {
             val text = binding.editTextText.text.toString()
