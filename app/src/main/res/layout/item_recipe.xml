@@ -44,7 +44,7 @@
                 android:text="@string/demo_publisher" />
 
             <TextView
-                android:id="@+id/social_rank"
+                android:id="@+id/emails"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/publisher"
@@ -71,7 +71,7 @@
                 android:id="@+id/divider"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/social_rank"
+                android:layout_below="@id/emails"
                 app:dividerInsetStart="15dp"
                 app:dividerInsetEnd="15dp" />
 

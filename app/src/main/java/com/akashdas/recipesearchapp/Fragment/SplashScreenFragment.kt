@@ -8,10 +8,14 @@ import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.akashdas.recipesearchapp.R
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class SplashScreenFragment : Fragment() {
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,9 +28,19 @@ class SplashScreenFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        auth = Firebase.auth
+
         lifecycleScope.launch {
-            delay(2500)
-            findNavController().navigate(R.id.action_splashScreenFragment_to_registrationFragment)
+            delay(2000)
+            val currentUser = auth.currentUser
+
+            // if auth user are available then go home otherwise registration fragment
+            if (currentUser != null) {
+                findNavController().navigate(R.id.action_splashScreenFragment_to_homeFragment)
+            }else {
+                findNavController().navigate(R.id.action_splashScreenFragment_to_registrationFragment)
+            }
+
         }
     }
 }
