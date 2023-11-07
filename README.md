@@ -1,3 +1,5 @@
+<img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/8edb164d-66d6-4e06-8db4-aca51c4382f5" width="900" height="300" />
+
 # Culinary Quest
 It's a Recipe Search App where utilize the "Forkify" API from https://forkify-api.herokuapp.com/ to fetch and display recipes. 
 
