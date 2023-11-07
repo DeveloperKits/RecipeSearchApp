@@ -6,8 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.akashdas.recipesearchapp.R
+import com.akashdas.recipesearchapp.ViewModel.ProfileViewModel
 import com.akashdas.recipesearchapp.databinding.FragmentProfileBinding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.auth
@@ -20,6 +22,7 @@ import com.google.firebase.database.getValue
 class ProfileFragment : Fragment() {
 
     private lateinit var binding: FragmentProfileBinding
+    private val viewModel: ProfileViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,7 +37,13 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // read data from firebase
-        readDataFromFirebase()
+        viewModel.userData.observe(viewLifecycleOwner) { userData ->
+            binding.emails.text = "Email: ${userData.email}"
+            binding.password.text = "Password: ${userData.password}"
+            // UID is not displayed to the user
+        }
+        // Fetch data
+        viewModel.readDataFromFirebase()
 
         binding.back.setOnClickListener {
             findNavController().navigate(R.id.action_profileFragment_to_homeFragment)

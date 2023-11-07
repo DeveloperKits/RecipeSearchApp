@@ -7,8 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.akashdas.recipesearchapp.R
+import com.akashdas.recipesearchapp.ViewModel.LoginViewModel
 import com.akashdas.recipesearchapp.databinding.FragmentLoginBinding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
@@ -18,8 +20,8 @@ import com.google.firebase.auth.auth
 class LoginFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
-    private lateinit var auth: FirebaseAuth
     private lateinit var progressDialog: ProgressDialog
+    private val viewModel: LoginViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,10 +29,6 @@ class LoginFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentLoginBinding.inflate(inflater, container, false)
-
-        // Initialize Firebase Auth
-        auth = Firebase.auth
-
         return binding.root
     }
 
@@ -43,6 +41,26 @@ class LoginFragment : Fragment() {
             setMessage("Please wait while we are processing your login.")
             isIndeterminate = true
             setCancelable(false)
+        }
+
+        // Observe ViewModel LiveData
+        viewModel.loginState.observe(viewLifecycleOwner) { state ->
+            when (state) {
+                is LoginViewModel.LoginState.SUCCESS -> {
+                    progressDialog.dismiss()
+                    Toast.makeText(requireContext(), "Login successful", Toast.LENGTH_SHORT).show()
+                    findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+                }
+
+                is LoginViewModel.LoginState.FAILURE -> {
+                    progressDialog.dismiss()
+                    Toast.makeText(
+                        requireContext(),
+                        "Authentication failed: ${state.message}",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
         }
 
         // go to registration
@@ -62,34 +80,13 @@ class LoginFragment : Fragment() {
             }else if (pass.length < 6){
                 binding.passText.error = "Password length insufficient"
             }else {
-                progressDialog.show()
                 checkAccountAndSignIn(email, pass)
             }
         }
     }
 
     private fun checkAccountAndSignIn(email: String, pass: String) {
-        auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    // Sign in success
-                    progressDialog.dismiss()
-                    Toast.makeText(
-                        requireContext(),
-                        "Login successful",
-                        Toast.LENGTH_SHORT,
-                    ).show()
-
-                    // go to home fragment
-                    findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
-                } else {
-                    // If sign in fails, display a message to the user.
-                    progressDialog.dismiss()
-                    Toast.makeText(
-                        requireContext(),
-                        "Authentication failed. Try with another mail",
-                        Toast.LENGTH_SHORT,
-                    ).show()
-                }
-            }
+        progressDialog.show()
+        viewModel.signIn(email, pass)
     }
 }
