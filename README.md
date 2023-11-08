@@ -66,10 +66,12 @@ Various design patterns are employed throughout the application, such as Reposit
 ## ScreenShot
 
    
-   <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/07798749-4704-4a32-8bc9-f48d6b03a564" width="300" height="600" hspace="10"/> <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/1afd7f78-02bc-4e06-966e-60023a2ebcac" width="300" height="600" hspace="20"/> <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/f14f0f6a-c7d6-43fc-8fd4-555f71720a4f" width="300" height="600" hspace="20"/>
-
-
-   <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/30064c1e-4bff-434e-a1fc-847fdde3347e" width="300" height="600" hspace="10"/> <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/c8ae3d0e-77a0-4a5b-b38d-ebd81c6ca345" width="300" height="600" hspace="20"/> <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/b7af1eed-59ff-4215-82c9-d8675e76a0b2" width="300" height="600" hspace="20"/>
+   <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/07798749-4704-4a32-8bc9-f48d6b03a564" width="300" height="600" hspace="10"/> <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/1afd7f78-02bc-4e06-966e-60023a2ebcac" width="300" height="600" hspace="30"/> 
+   
+   
+   <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/f14f0f6a-c7d6-43fc-8fd4-555f71720a4f" width="300" height="600" hspace="10"/><img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/30064c1e-4bff-434e-a1fc-847fdde3347e" width="300" height="600" hspace="30"/> 
+   
+   <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/c8ae3d0e-77a0-4a5b-b38d-ebd81c6ca345" width="300" height="600" hspace="10"/> <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/b7af1eed-59ff-4215-82c9-d8675e76a0b2" width="300" height="600" hspace="30"/>
    
    
 ## Navigation graph   
@@ -82,9 +84,10 @@ Various design patterns are employed throughout the application, such as Reposit
 ## Demo
 
 <p align="left" >
-      <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/906b1bd4-672a-4b8f-9eac-eaa29c078a0e" width="300" height="600" hspace="10"/>
+      <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/5d7c14bf-62bb-4db4-a6a2-a02c992c50fb" width="300" height="600" hspace="10"/>
    </p>   
 
+<br>
 
 ## Thank You
    
