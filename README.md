@@ -3,6 +3,8 @@
 # Culinary Quest
 It's a Recipe Search App where utilize the "Forkify" API from https://forkify-api.herokuapp.com/ to fetch and display recipes. 
 
+<br>
+
 ## Features
 
 - SplashScreen: A brief introduction to the app with a visually pleasing start.
@@ -20,6 +22,8 @@ It's a Recipe Search App where utilize the "Forkify" API from https://forkify-ap
 - LiveData
 - DataBinding
 
+<br>
+
 ## Architecture
 
 This application implements the MVVM (Model-View-ViewModel) architecture pattern, ensuring a separation of concerns and easier maintenance. It uses the Navigation Component for managing UI navigation, Retrofit for network calls, Coroutines for asynchronous tasks, and Firebase for user authentication and data storage. LiveData is used for observing data changes, and DataBinding for binding UI components in layouts to data sources.
@@ -32,6 +36,8 @@ Various design patterns are employed throughout the application, such as Reposit
 
 - Android Studio Arctic Fox | 2020.3.1 Patch 2 or higher
 - Min SDK version 27 (Oreo) or higher
+
+<br>
 
 ## Getting Started
 
@@ -62,6 +68,7 @@ Various design patterns are employed throughout the application, such as Reposit
    - Connect an Android device or use the Android emulator.
    - Press 'Run' (the green play button) in Android Studio.
 
+<br>
 
 ## ScreenShot
 
