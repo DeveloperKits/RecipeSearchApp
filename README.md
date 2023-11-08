@@ -1,4 +1,4 @@
-<img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/8edb164d-66d6-4e06-8db4-aca51c4382f5" width="900" height="300" />
+<img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/2516b218-551b-4f91-b349-69acdacfcf8a"/>
 
 # Culinary Quest
 It's a Recipe Search App where utilize the "Forkify" API from https://forkify-api.herokuapp.com/ to fetch and display recipes. 
@@ -66,19 +66,27 @@ Various design patterns are employed throughout the application, such as Reposit
 ## ScreenShot
 
    
-   <img src="https://user-images.githubusercontent.com/69858580/104105648-c6b40700-52d9-11eb-8873-d50b36603784.jpg" width="300" height="300" hspace="30"/><img src="https://user-images.githubusercontent.com/69858580/104105622-9b311c80-52d9-11eb-9fa6-55e5baad5550.jpeg" width="300" height="600" hspace="30"/>
+   <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/07798749-4704-4a32-8bc9-f48d6b03a564" width="300" height="600" hspace="10"/> <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/1afd7f78-02bc-4e06-966e-60023a2ebcac" width="300" height="600" hspace="20"/> <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/f14f0f6a-c7d6-43fc-8fd4-555f71720a4f" width="300" height="600" hspace="20"/>
 
-   <img src="https://user-images.githubusercontent.com/69858580/104105669-e51a0280-52d9-11eb-905c-612d8c4dce7c.jpeg" width="300" height="600" hspace="30"/><img src="https://user-images.githubusercontent.com/69858580/104105684-07ac1b80-52da-11eb-848a-a2578b6d3d68.jpeg" width="300" height="600" hspace="30"/>
 
-   <img src="https://user-images.githubusercontent.com/69858580/104105669-e51a0280-52d9-11eb-905c-612d8c4dce7c.jpeg" width="300" height="600" hspace="30"/><img src="https://user-images.githubusercontent.com/69858580/104105684-07ac1b80-52da-11eb-848a-a2578b6d3d68.jpeg" width="300" height="600" hspace="30"/>
+   <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/30064c1e-4bff-434e-a1fc-847fdde3347e" width="300" height="600" hspace="10"/> <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/c8ae3d0e-77a0-4a5b-b38d-ebd81c6ca345" width="300" height="600" hspace="20"/> <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/b7af1eed-59ff-4215-82c9-d8675e76a0b2" width="300" height="600" hspace="20"/>
    
+   
+## Navigation graph   
 
    <p align="left" >
-      <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/83dbced7-75e4-48aa-8b1c-2f9b98d00c05" width="600" height="320" hspace="30"/>
+      <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/83dbced7-75e4-48aa-8b1c-2f9b98d00c05" width="600" height="320" hspace="10"/>
    </p>   
 
 
-   ## Thank You
+## Demo
+
+<p align="left" >
+      <img src="https://github.com/DeveloperKits/RecipeSearchApp/assets/69858580/906b1bd4-672a-4b8f-9eac-eaa29c078a0e" width="300" height="600" hspace="10"/>
+   </p>   
+
+
+## Thank You
    
 
   
